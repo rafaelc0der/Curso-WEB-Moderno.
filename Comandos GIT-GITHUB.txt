@@ -1,0 +1,56 @@
+git bash = abre o git na pasta
+
+git init = inicia o git na pasta
+
+git pull = atualiza os arquivos da pasta
+
+git push = envia os arquivos da pasta para a branch atual
+
+git checkout NomeDaBranch = muda para a branch
+git checkout -b (nome da branch a ser criada) (nome da branch a ser copiada) = Cria uma nova branch com base em outra branch
+
+git branch = mostras branch e atual branch com *
+git branch NomedaBranch = Cria uma nova branch
+Após criar uma branch nova e quando for fazer um psuh,
+deve digitar o comando que aparece na tela: git push --set--upstream origin NomedaBranch (Copia e cola o da tela)
+
+it status = mostra os status: se tem commits (versões do código) e diz quais arquivos não foi incluído no controle de versão
+
+git add "" = prepara o arquivo para ser adicionado ao controle de versão(digitar nome do arquivo dentro das ")
+
+git add . = prepara todos os arquivos da pasta para o controle de versão
+
+git commit -m "" = cria a versão do código (digita nas aspas a modificação feita.
+
+git reflog = ver o histórico das versões.
+
+git reset --hard 00000 = volta/move pelas versões do código (adicionar o id nos 00000)
+
+git merge NomedaBranch= Unir duas branch (Entra na master e digita o nome da branch a ser unida a master e depois o git push)
+Antes de fazer o merge, deve puxar as atualizações da master com o git pull
+
+
+Primeiro veja os status, prepare/adicionar os arquivos, crie a versão com o commit, envie os arquivos com o push
+
+1. git pull da branch principal
+2. gerar uma nova branch a partir da principal
+3. trabalhar e a adcionar novas funcionalidade na nova branch que criou
+4.Finalizar o trabalho na branch temporária
+5.Git checkout na branch principal
+6. Git pull
+7. Mergiar(unir) o código da branch temporária com a branch principal(depois testar)
+8. git push da branch principal
+
+-----------
+Configura o git
+
+git config --global user.email "email-do-git@email.com"
+
+git config --global user.name "Seu Nome"
+
+Crie um repositório a receber os arquivos no GITHUB
+
+git remote add origin LINKdoRepositório = configura para qual repositório será enviados os arquivos
+
+git push --set--upstream origin master = cria a branch master e envia os arquivos
+
